@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Pacifico|Roboto|PT+Sans');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;    
+}
+header, nav, main, section, article, footer {
+    display: block;
+}
+
+.wrapper{
+    width: 1170px;
+    margin: 0 auto;
+    border:0px solid black;
+    text-align:center;
+}
+header {
+    height: 100px;
+    line-height: 100px;
+    width: 100%;
+    font-size: 25pt;
+    position: relative;    
+}
+nav a {    
+    color: #264951;
+}
+nav a:hover{
+    color:#8c8e8e;
+}
+#logo {    
+    margin-right: 40px;
+    background: url('../images/smallLogo.png') no-repeat left;
+    padding-left: 52px;
+    width: 197px;
+    height: 100px;
+    color: #2d3950;
+    font-family: 'Berkshire Swash', cursive;
+}
+.cover{       
+    width:100%;
+    height:800px;
+    background: url('../images/cover.png') no-repeat center center;
+    border:1px solid black;        
+    box-sizing:border-box;
+    text-align:center;
+}
+.cover article{
+    width:650px;
+    height: 330px;
+    border:0px solid red;
+    text-align:center;
+    margin-left: 300px;
+    margin-top: 300px;
+}
+.cover h1{
+    font-size:80pt;
+    color:#fff;
+    border-bottom: 3px solid #12a3e0;    
+}
+.cover h3{
+    font-size: 20pt;
+    color:white;
+    margin-top: 45px;
+    margin-bottom: 90px;    
+}
+.cover a{
+    width: 170px;
+    height: 55px;
+    border: 1px solid #12a3e0;
+    padding: 20px;
+    color:white;
+}
+
+.onMe {
+    background: #f6f9f9;
+    width: 100%;
+    height: 345px;    
+    text-align:center;
+}
+.onMe article{
+    padding-top: 90px;
+}
+.onMe article h1{
+    font-size: 40pt;    
+}
+.onMe article article{
+    margin-top: -50px;    
+    line-height: 30px;
+}
+
+.skills{
+    height: 640px;
+}
+.skills h1{
+    font-size: 41pt;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+.skills ul{
+    list-style:none;
+    margin-left: 50px;
+    text-align:left;    
+}
+.skills ul li{
+    margin-bottom: 30px;    
+    height:100px;
+    line-height: 100px;    
+    background: url('../images/skill.png') no-repeat left;
+    font-size: 30pt;
+    color: #2d3950;
+    padding-left: 120px;
+}
+footer {            
+    height: 90px;    
+    background: #f6f9f9;    
+    text-align:left;    
+}
+footer .wrapper{
+    text-align:left;
+}
+footer nav{
+    margin-left: 40px;    
+    padding-top: 25px;
+    position: relative;
+}
+footer nav a{
+    display: inline-block;
+    width: 40px; 
+    height: 40px;
+    margin-right: 5px;
+}
+footer nav a:nth-child(1){background: url('../images/facebook.png') no-repeat left;}
+footer nav a:nth-child(2){background: url('../images/twitter.png') no-repeat left;}
+footer nav a:nth-child(3){background: url('../images/google.png') no-repeat left;}
+footer nav a:nth-child(4){background: url('../images/linkedin.png') no-repeat left;}
+footer nav span{
+    display:inline-block;
+    position: absolute;
+    top: 35px; 
+    margin-left: 20px;
+}
