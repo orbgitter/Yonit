@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash|Pacifico|Roboto|PT+Sans');
 * {
     margin: 0;
     padding: 0;
 }
 
 html {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 a {
@@ -36,12 +35,12 @@ nav a:hover{
 }
 #logo {    
     margin-right: 40px;
-    background: url('../images/smallLogo.png') no-repeat left;
+    background: url('../images/smallLogo.jpg') no-repeat left;
     padding-left: 52px;
     width: 197px;
     height: 100px;
     color: #2d3950;
-    font-family: 'Berkshire Swash', cursive;
+    font-family: 'Old English Text MT', cursive;
 }
 .cover{       
     width:100%;
@@ -53,10 +52,10 @@ nav a:hover{
 }
 .cover article{
     width:650px;
-    height: 330px;
-    border:0px solid red;
+    height:330px;
+    border:0px;
     text-align:center;
-    margin-left: 300px;
+    margin-left: 350px;
     margin-top: 300px;
 }
 .cover h1{
@@ -78,19 +77,19 @@ nav a:hover{
     color:white;
 }
 
-.onMe {
+.aboutMe {
     background: #f6f9f9;
     width: 100%;
     height: 345px;    
     text-align:center;
 }
-.onMe article{
+.aboutMe article{
     padding-top: 90px;
 }
-.onMe article h1{
+.aboutMe article h1{
     font-size: 40pt;    
 }
-.onMe article article{
+.aboutMe article article{
     margin-top: -50px;    
     line-height: 30px;
 }
