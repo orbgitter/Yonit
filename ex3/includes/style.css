@@ -1,0 +1,192 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing:border-box; /*fixed width\height which includes border\padding inside*/
+    font-family: Arial;
+}
+
+section, nav, aside, article{display:block;}
+
+a{text-decoration:none;}
+.clear{clear:both;}
+
+#logo {
+    display: block;
+    width: 71px;
+    height: 74px;
+    border: 0px solid red;
+    background: url('../images/logo.png') center center no-repeat;
+}
+
+/*layout 1*/
+
+.wrapper{
+    width:1000px;
+    border:0px solid black;    
+    margin: 0 auto;    
+}
+#layout1 header{
+    width:100%;    
+}
+#layout1 header section{
+    position: relative;
+}
+#layout1 #logo {
+    position: absolute;
+    left: 100px;
+    top: 10px;
+}
+#layout1 header section{
+    height:125px;
+    /*border:1px solid green;*/
+}
+#layout1 #menu .selected {
+    background: #333;
+}
+#layout1 #menu ul { /*#layout1 header nav ul */
+    list-style: none;
+    word-spacing: -5px; /*disable the auto margin space of display: inline-block*/
+}
+#layout1 #menu ul li{   
+    display: inline-block; /*comes with auto margin of 4px*/
+    width: 243.33px;
+    height: 57px;
+    line-height: 57px; /*height = line-height -> text in the middle*/       
+    text-align:center;    
+    background-color: #b94a48;
+    color: #fff;
+    font-size: 20px;
+    /*border: 1px solid purple; */
+}
+#layout1 #menu ul li a{
+    color: #fff;
+}
+#layout1 #menu ul li:first-child{   
+    margin-left: 271.1px;
+}
+
+#layout1 aside{
+    float:left;
+    width:12.5%;
+    height: 695px;    
+    background: #f2dede;
+}
+#layout1 main {
+    float: left;
+    width: 87.5%;
+    height: 695px;
+    position: relative;    
+}
+
+#layout1 main section:nth-child(1){ /*like 1st child - the red one*/
+    width: 850px;
+    height: 270px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #ee5f5b;
+}
+#layout1 main section:nth-child(1) article{
+    width: 125px;
+    height: 95px;
+    background-color: #000;
+    opacity: 0.6;
+    margin-left: 340px;
+    margin-top: 88px;
+}
+
+#layout1 main section:nth-child(2){
+    width: 693px;
+    height: 175px;
+    background-color: #000;
+    position: absolute;
+    bottom: 30px;
+    left: 98px;
+    opacity: 0.6;
+}
+
+#layout1 footer{
+    width: 100%;
+    height: 122px;
+    background-color: #d6d6d6;
+}
+
+
+/*layout 2*/
+#layout2 header{
+    width:100%;
+    height: 157px;    
+}
+#layout2 #logo {    
+    margin: 33px auto;
+}
+#layout2 aside {
+    float: left;
+    height: 760px;
+    width: 24.2%;
+    background-color: #333;
+}
+#layout2 main {
+    float: left;
+    height: 760px;
+    width: 75.8%;
+    background-color: #ee5f5b;
+}
+#layout2 #menu{
+    list-style:none;
+}
+#layout2 #menu li{
+    height: 60px;
+    line-height: 60px;
+    border:0px solid white;
+    width: 100%;   
+    font-size: 25px;
+    padding-left: 10px;
+    color: #fff; /*cause <li-3> is not a link yet*/
+    /*color is in (li a) -> cause it's a link -> <a> always wins*/
+}
+#layout2 #menu li a{ 
+    color: #fff;
+}
+#layout2 #menu .selected{
+    background-color: #b94a48;
+}
+#layout2 main{
+    position: relative;
+    overflow: hidden;
+}
+#layout2 main section {
+    width: 213px;
+    background-color: #5f2624;
+    position: absolute;
+}
+#layout2 main section:nth-child(1){
+    height: 365px;    
+    left: 30px;
+}
+#layout2 main section:nth-child(2){
+    height: 560px;    
+    left: 271px;
+}
+#layout2 main section:nth-child(3){
+    height: 223px;
+    right: 31px;
+}
+#layout2 main section:nth-child(4){
+    height: 500px;
+    left: 30px;
+    top: 385px;
+}
+#layout2 main section:nth-child(5){
+    height: 306px;
+    left: 271px;
+    top: 580px;
+}
+
+#layout2 footer {
+    width: 1000px;
+    height: 60px;
+    position: fixed;
+    bottom: 0px;
+    background-color: #d6d6d6;
+}
