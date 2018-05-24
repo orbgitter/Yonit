@@ -1,7 +1,7 @@
 *{
     margin:0;
     padding: 0;
-    box-sizing:border-box; /*fixed width\height which includes border\padding inside..*/
+    box-sizing:border-box; /*fixed width\height which includes border\padding inside*/
     font-family: Arial;
 }
 
@@ -22,11 +22,11 @@ a{text-decoration:none;}
 
 .wrapper{
     width:1000px;
-    border:0px solid black;    
-    margin: 0 auto;    
+    border:0px solid black;
+    margin: 0 auto;
 }
 #layout1 header{
-    width:100%;    
+    width:100%;
 }
 #layout1 header section{
     position: relative;
@@ -47,12 +47,12 @@ a{text-decoration:none;}
     list-style: none;
     word-spacing: -5px; /*disable the auto margin space of display: inline-block*/
 }
-#layout1 #menu ul li{   
+#layout1 #menu ul li{
     display: inline-block; /*comes with auto margin of 4px*/
     width: 243.33px;
     height: 57px;
-    line-height: 57px; /*height = line-height -> text in the middle*/       
-    text-align:center;    
+    line-height: 57px; /*height = line-height -> text in the middle*/
+    text-align:center;
     background-color: #b94a48;
     color: #fff;
     font-size: 20px;
@@ -61,21 +61,21 @@ a{text-decoration:none;}
 #layout1 #menu ul li a{
     color: #fff;
 }
-#layout1 #menu ul li:first-child{   
+#layout1 #menu ul li:first-child{
     margin-left: 271.1px;
 }
 
 #layout1 aside{
     float:left;
     width:12.5%;
-    height: 695px;    
+    height: 695px;
     background: #f2dede;
 }
 #layout1 main {
     float: left;
     width: 87.5%;
     height: 695px;
-    position: relative;    
+    position: relative;
 }
 
 #layout1 main section:nth-child(1){ /*like 1st child - the red one*/
@@ -115,9 +115,9 @@ a{text-decoration:none;}
 /*layout 2*/
 #layout2 header{
     width:100%;
-    height: 157px;    
+    height: 157px;
 }
-#layout2 #logo {    
+#layout2 #logo {
     margin: 33px auto;
 }
 #layout2 aside {
@@ -139,13 +139,13 @@ a{text-decoration:none;}
     height: 60px;
     line-height: 60px;
     border:0px solid white;
-    width: 100%;   
+    width: 100%;
     font-size: 25px;
     padding-left: 10px;
     color: #fff; /*cause <li-3> is not a link yet*/
     /*color is in (li a) -> cause it's a link -> <a> always wins*/
 }
-#layout2 #menu li a{ 
+#layout2 #menu li a{
     color: #fff;
 }
 #layout2 #menu .selected{
@@ -161,11 +161,11 @@ a{text-decoration:none;}
     position: absolute;
 }
 #layout2 main section:nth-child(1){
-    height: 365px;    
+    height: 365px;
     left: 30px;
 }
 #layout2 main section:nth-child(2){
-    height: 560px;    
+    height: 560px;
     left: 271px;
 }
 #layout2 main section:nth-child(3){
@@ -189,4 +189,106 @@ a{text-decoration:none;}
     position: fixed;
     bottom: 0px;
     background-color: #d6d6d6;
+}
+
+#layout3 header{
+  height: 500px;
+  width:100%;
+}
+
+#layout3 header section{
+  float: left;
+  width: 50%;
+  height: 100%;
+  border:0px solid red;
+  position: relative;;
+}
+
+#layout3 #logo{
+  position: absolute;
+  top:20px;
+  left:20px;
+}
+#layout3 #divPlus{
+  position:absolute;
+  top: 205px;
+  left: 205px;
+  border:0px solid green;
+  width:86px;
+  height: 86px;
+  background: url('../images/plus.png') center center no-repeat;
+  cursor: pointer;
+}
+#layout3 .headerSquares{
+  background: #9d261d;
+}
+#layout3 .headerSquares article{
+  float: left;
+  width: 50%;
+  height: 50%;
+  background: #000;
+}
+#layout3 .headerSquares article:nth-child(1){opacity: 0.8}
+#layout3 .headerSquares article:nth-child(2){opacity: 0.4}
+#layout3 .headerSquares article:nth-child(3){opacity: 0.2}
+#layout3 .headerSquares article:nth-child(4){opacity: 0.6}
+#layout3 .headerSquares article:hover{
+  background: #fff;
+  opacity: 1;
+}
+#layout3 .square:hover{
+  opacity: 1!important;
+  background: white;
+}
+
+#layout3 #menu{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+#layout3 #menu ul{
+  list-style: none;
+}
+#layout3 #menu ul li{
+  float:left;
+  width: 33.334%;
+  height: 62px;
+  line-height: 62px;
+  text-align: center;
+  background: #b94a48;
+}
+#layout3 #menu ul li a{
+  color: white;
+}
+#layout3 #menu ul li.selected{
+  background: #333;
+}
+#layout3 main{
+  min-height: 500px;
+  background: #9d261d;
+}
+
+#layout3 .square{
+  float: left;
+  width: 25%;
+  height: 250px;
+  background: black;
+  border:0px solid black;
+}
+
+@media screen and (max-width: 1024px) {
+  #layout3 header section{
+    float: left;
+    width: 100%;
+    height: 100%;
+    border:0px solid red;
+    position: relative;;
+  }
+  #layout3 #divPlus{
+    top: 40%;
+    left: 45%;
+  }
+  #layout3 .square{
+    width: 50%!important;
+  }
 }
