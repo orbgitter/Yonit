@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Around you</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"  <!-- jq server -->
+  			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"></script>                  
+	<link rel="stylesheet" href="includes/css/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<script src="includes/js/main.js" async></script>
+</head>
+<body>
+	<div>
+		<header>
+			<a href="#" class="left_float"><i id="hamburger" class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
+			<a href="#" class="left_float"><i class="fa fa-lock" aria-hidden="true"></i></a>
+			<a href="cart.html" class="right_float">5 <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i></a>
+			<a href="#" class="right_float"><i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i></a>
+		</header>	    
+		<main>
+			<div id="menu" class="collapse_menu">
+				<div class="profile_pic"><i id class="fa fa-user-circle-o fa-4x" aria-hidden="true"></i></div>
+				<a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</a>
+				<a href="history.html"><i class="fa fa-history" aria-hidden="true"></i> History</a>
+				<a href="#"><i class="fa fa-share-alt" aria-hidden="true"></i> Share a deal</a>
+				<a href="around_you.html"><i class="fa fa-map-marker" aria-hidden="true"></i> Around you</a>
+				<a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i> Statistics</a>
+				<a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i> Rate Us!</a>
+				<a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a>
+				<a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign-out</a>
+				<div><img id="logo" src="images/logo.png"></div>
+			</div>
+			<div>
+				<h1>Search Product:</h1>
+			</div>
+						<form class="forms left_float">  
+				<div class="form-text left_float">&nbsp;Deviation</div>
+				<div class="sort left_float">
+					<select class="custom-select " id="inputGroupSelect01">
+						<option value="5">5%</option>
+						<option value="10">10%</option>
+						<option value="15">15%</option>
+					</select>
+				</div>
+					 <div class="form-text left_float">&nbsp;of</div>
+				<div class="sort left_float">
+					<select class="custom-select " id="inputGroupSelect01">
+						<option value="1">crowd wisdom</option>
+						<option value="2">market avg</option>
+					</select>
+				</div>
+			</form>
+			<div class="mapouter ">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.626035436923!2d34.80500318903941!3d32.09097073032002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4bc46a55389d%3A0xe538375d514942dd!2z15DXoNeUINek16jXoNenLCDXqNee16og15LXnywg15nXqdeo15DXnA!5e0!3m2!1siw!2sus!4v1528290554062" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+			<table class="table">
+				<thead>
+					<tr>
+						<th scope="col"></th>				    	
+						<th scope="col">Branch</th>
+						<th scope="col">Distance</th>
+						<th scope="col">Price</th>				      
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row"></th>
+						<td>branch1</td>
+						<td>5 km</td>
+						<td>150$</td>
+					</tr>
+					<tr>
+						<th scope="row"></th>
+						<td>branch1</td>
+						<td>36 km</td>
+						<td>145$</td>
+					</tr>
+					<tr>
+						<th scope="row"></th>
+						<td>branch1</td>
+						<td>22.5 km</td>
+						<td>145$</td>
+					</tr>
+				</tbody>
+			</table>
+	    </main>
+		<footer class="footer fixed-bottom">
+			<nav>
+				<a href="#" class="left_float"><i class="fa fa-star fa-2x" aria-hidden="true"></i></a>
+				<a href="#" class="left_float"><i class="fa fa-heart fa-2x" aria-hidden="true"></i></a>
+				<a href="index.html" class="left_float"><i class="fa fa-camera fa-2x" aria-hidden="true"></i></a>
+				<a href="#" class="left_float"><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i></a>
+				<a href="history.html" class="left_float"><i class="fa fa-history fa-2x" aria-hidden="true"></i></a>
+			</nav>
+		</footer>
+	</div>
+</body>
+</html>

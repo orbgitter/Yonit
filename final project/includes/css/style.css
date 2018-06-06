@@ -1,0 +1,123 @@
+* { margin: 0; padding: 0; }
+
+header, main, footer { display: block; }
+
+.left_float { float: left; }
+
+.right_float { float: right; }
+
+header {
+	height: 50px;
+	line-height: 45px;
+	background-color: #fefefe;
+}
+
+header a {
+	padding-right: 15px;
+	font-family: Arial;
+	color: #00932d;
+	padding-left: 15px;
+} 
+
+header a:hover { 
+	text-decoration: none; 
+	color: #00932d;
+}
+
+main { min-height: 550px; }
+
+nav a { 
+	width: 20%; 
+	text-align: center;
+}
+
+i {
+	color: #cdcdcd;
+	vertical-align: middle;
+}
+
+footer {
+	height: 45px;
+	line-height: 40px;
+	background-color: #fefefe;
+}
+
+td, th { line-height: 50px; }
+
+h1 { padding-left: 15px; }
+
+.sort {
+	width: 150px;
+	line-height: 50px;
+	margin-left: 15px;
+}
+
+.collapse_menu {
+	height: 550px;
+	width: 250px;
+	background-color: #333333;
+	top: 50px;
+	position: fixed;
+	color: #ffffff;
+}
+
+.collapse_menu a {
+	font-family: Arial;
+	line-height: 50px;
+	float: left;
+	padding-left: 15px;
+	text-decoration: none;
+	width: 250px;
+	color: #ffffff;
+}
+
+.collapse_menu a:hover {
+	text-decoration: none;
+	color: #ffffff;	
+}
+
+.profile_pic {
+	margin-left: 15px;
+	margin-top: 15px; 
+}
+
+.price_br {
+	height: 40px;
+	line-height: 40px;
+	font-family: Arial;
+	width: 100%;
+	padding-left: 20px;
+}
+
+.price_br_blue {
+	background-color: #c1d9ff;
+	font-size: 20px;
+}
+
+#menu { display: none; }
+
+.align { text-align: center; }
+
+.forms {
+	line-height: 50px;
+	width: 100%;
+	margin-left: 20px;
+}
+
+.form-text {
+	line-height: 50px;
+	margin-left: 5px;
+}
+
+.mapouter{ 
+	text-align:center;
+	height:500px;
+	width:100%; 
+}
+
+#logo {
+    width: 100%;
+    margin: auto;
+    bottom: 0;
+    background-color: #ffffff;
+}
